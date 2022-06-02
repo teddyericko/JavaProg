@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WELCOME</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+		  integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+</head>
+<body style="background-color: #FE601F">
+	<h1 class="text-center" style="color: #FFF; padding-top: 100px; padding-bottom: 50px">WELCOME</h1>
+	<form action="#" th:action="@{/next}" th:object="${user}" method="post">
+		<div class="col-md-12 text-center" style="padding-bottom: 50px">
+			<label for="Name" class="col-form-label">Name</label> <input type="text" th:field="*{name}" class="form-control" id="Name" placeholder="Name"> <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="text-danger"></span>
+
+		</div>
+		<div class="col-md-12 text-center">
+			<td style="padding-top: 50px; padding-left: 200px" ><input type="submit" class="btn btn-primary"/></td>
+		</div>
+	</form>
+</body>
+</html>

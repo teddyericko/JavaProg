@@ -1,0 +1,4 @@
+com\example\rental\entity\Student.class
+com\example\rental\repository\StudentRepository.class
+com\example\rental\RentalApplication.class
+com\example\rental\controller\StudentController.class
